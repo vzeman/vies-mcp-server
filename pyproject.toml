@@ -1,0 +1,17 @@
+[project]
+name = "vies-mcp-server"
+version = "0.1.0"
+description = "MCP server for VAT ID validation using EU VIES service"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "mcp>=0.9.0",
+    "httpx>=0.25.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+vies-mcp-server = "vies_mcp_server.main:main"
